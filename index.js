@@ -2,10 +2,11 @@
 /* eslint-disable no-unused-vars */
 import Book from './modules/book.js';
 import Library from './modules/library.js';
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 
-const today = new Date().toUTCString();
-const time = document.querySelector('.nav__para');
-time.textContent = today;
+//const today = new Date().toUTCString();
+/*const time = document.querySelector('.nav__para');
+time.textContent = today;*/
 const mainList = document.querySelector('.main__list');
 const form = document.querySelector('.form');
 const infoPage = document.querySelector('.info');
@@ -57,6 +58,17 @@ window.onload = () => {
 };
 
 window.toggleInfo = toggleInfo;
+
+function displayDate() {
+  const dateString = document.querySelector('.nav__para');
+
+  /* eslint-disable-next-line no-undef */
+  dateString.innerHTML = DateTime.now().toFormat('LLLL dd yyyy, t');
+}
+
+displayDate();
+
+
 
 /* eslint-enable max-classes-per-file */
 /* eslint-disable no-unused-vars */
