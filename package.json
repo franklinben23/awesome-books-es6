@@ -1,0 +1,28 @@
+{
+  "name": "awesome-books-es6",
+  "version": "1.0.0",
+  "description": "In this repository I will replicate a version of my previous project, awesome books, utilizing es6 sintax and code modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franklinben23/awesome-books-es6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franklinben23/awesome-books-es6/issues"
+  },
+  "homepage": "https://github.com/franklinben23/awesome-books-es6#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.4"
+  },
+  "dependencies": {
+    "luxon": "^2.3.0"
+  }
+}
