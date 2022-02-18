@@ -4,7 +4,8 @@
 
 > In this project, a basic website that allows users to add/remove books from a list is implemented. This is achieve  by using JavaScript objects and arrays. The DOM is modified dynamically and add basic events.
 
-![screenshot](./assets/basicUI.PNG)
+![Screenshot 2022-02-18 at 00-45-19 Awesome Books](https://user-images.githubusercontent.com/68623189/154619322-54a2d987-8f7c-4846-820c-e1a7ea674897.png)
+
 
 ## Built With
 
