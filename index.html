@@ -22,7 +22,6 @@
     />
 
     <!-- JS -->
-    <script src="index.js" defer></script>
   </head>
   <body>
     <!-- Navigation -->
@@ -58,9 +57,10 @@
     <!-- Add Book Input -->
     <section class="form">
       <h2 class="form__header">Add new book</h2>
-      <input class="form__title" type="text" placeholder="Title" name="title" />
+      <input class="form__title" id="title" type="text" placeholder="Title" name="title" />
       <input
         class="form__author"
+        id="form"
         type="text"
         placeholder="Author"
         name="author"
@@ -93,5 +93,6 @@
         <p class="footer__para">Copyright &copy; Awesome Books</p>
       </div>
     </footer>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

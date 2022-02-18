@@ -1,58 +1,14 @@
 /* eslint-disable max-classes-per-file */
 /* eslint-disable no-unused-vars */
+import Book from './modules/book.js';
+import Library from './modules/library.js';
+
 const today = new Date().toUTCString();
 const time = document.querySelector('.nav__para');
 time.textContent = today;
 const mainList = document.querySelector('.main__list');
 const form = document.querySelector('.form');
 const infoPage = document.querySelector('.info');
-class Book {
-  constructor(title, author) {
-    this.title = title;
-    this.author = author;
-    this.id = new Date().valueOf().toString();
-  }
-}
-
-const removeElement = (element) => {
-  while (element.firstChild) {
-    element.removeChild(element.firstChild);
-  }
-};
-
-class Library {
-  constructor() {
-    this.list = [];
-  }
-
-  removeBook(id) {
-    this.list = this.list.filter((item) => item.id !== id);
-    localStorage.setItem('library', JSON.stringify(this.list));
-  }
-
-  addBook(book) {
-    this.list.push(book);
-  }
-
-  updateDom() {
-    const list = document.querySelector('.listing');
-    removeElement(list);
-    this.list.forEach((el) => {
-      const book = document.createElement('li');
-      const rmBtn = document.createElement('button');
-      rmBtn.innerHTML = 'remove';
-      book.innerHTML = `${el.title} by ${el.author}`;
-      book.classList.add('book-item');
-      rmBtn.classList.add('remove-book');
-      book.appendChild(rmBtn);
-      list.appendChild(book);
-      rmBtn.addEventListener('click', () => {
-        this.removeBook(el.id);
-        book.remove(book.id);
-      });
-    });
-  }
-}
 
 const toggleInfo = (page) => {
   switch (page) {
@@ -79,8 +35,8 @@ const Lib = new Library();
 
 const addBtn = document.querySelector('.form__btn');
 addBtn.addEventListener('click', () => {
-  const BookTitle = document.querySelector('.form__title').value;
-  const BookAuthor = document.querySelector('.form__author').value;
+  const BookTitle = document.getElementById('title').value;
+  const BookAuthor = document.getElementById('form').value;
 
   const book = new Book(BookTitle, BookAuthor);
   Lib.addBook(book);
@@ -99,6 +55,8 @@ window.onload = () => {
   form.classList.add('none');
   mainList.classList.remove('none');
 };
+
+window.toggleInfo = toggleInfo;
 
 /* eslint-enable max-classes-per-file */
 /* eslint-disable no-unused-vars */
