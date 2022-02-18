@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome books
+# Awesome books es6: Sintax & Modules.
 
 > In this project, a basic website that allows users to add/remove books from a list is implemented. This is achieve  by using JavaScript objects and arrays. The DOM is modified dynamically and add basic events.
 
