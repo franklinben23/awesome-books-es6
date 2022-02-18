@@ -1,5 +1,3 @@
-/* eslint-disable max-classes-per-file */
-/* eslint-disable no-unused-vars */
 import Book from './modules/book.js';
 import Library from './modules/library.js';
 import { DateTime } from './node_modules/luxon/src/luxon.js';
@@ -62,6 +60,3 @@ function displayDate() {
 }
 
 displayDate();
-
-/* eslint-enable max-classes-per-file */
-/* eslint-disable no-unused-vars */
