@@ -4,9 +4,9 @@ import Book from './modules/book.js';
 import Library from './modules/library.js';
 import { DateTime } from './node_modules/luxon/src/luxon.js';
 
-//const today = new Date().toUTCString();
-/*const time = document.querySelector('.nav__para');
-time.textContent = today;*/
+// const today = new Date().toUTCString();
+/* const time = document.querySelector('.nav__para');
+time.textContent = today; */
 const mainList = document.querySelector('.main__list');
 const form = document.querySelector('.form');
 const infoPage = document.querySelector('.info');
@@ -67,8 +67,6 @@ function displayDate() {
 }
 
 displayDate();
-
-
 
 /* eslint-enable max-classes-per-file */
 /* eslint-disable no-unused-vars */
